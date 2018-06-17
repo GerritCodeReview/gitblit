@@ -1,0 +1,37 @@
+package(default_visibility = ["//visibility:public"])
+
+exports_files([
+    "patches/0001-Bump-JGit-to-4.11.0.201803080745-r.93-gcbb2e65db.patch",
+    "patches/0002-Ant-Add-buildGitblit-target.patch",
+])
+
+#java_import(
+#    name = 'jar',
+#    jars = ['build/gitblit.jar'],
+#    srcjar = 'build/gitblit-sources.jar',
+#)
+
+java_binary(
+    name = "keyGenerator",
+    srcs = ["src/main/java/com/gitblit/tools/KeysGenerator.java"],
+    main_class = "com.gitblit.tools.KeysGenerator",
+    deps = ["@args4j//jar"],
+)
+
+genrule(
+    name = "keys",
+    srcs = ["data/defaults.properties"],
+    outs = ["keys.srcjar"],
+    cmd = " && ".join([
+        "TMP=$$(mktemp -d || mktemp -d -t bazel-tmp)",
+        " ".join([
+            "$(location :keyGenerator)",
+            "-properties data/defaults.properties",
+            "-classname com.gitblit.Keys",
+            "-tmp $${TMP}",
+            "-out $(OUTS)",
+        ]),
+        "rm -rf $${TMP}",
+    ]),
+    tools = [":keyGenerator"],
+)

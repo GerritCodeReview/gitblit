@@ -1,0 +1,26 @@
+package(default_visibility = ["//visibility:public"])
+
+java_binary(
+    name = "keyGenerator",
+    srcs = ["src/main/java/com/gitblit/tools/KeysGenerator.java"],
+    main_class = "com.gitblit.tools.KeysGenerator",
+    deps = ["@args4j//jar"],
+)
+
+genrule(
+    name = "keys",
+    srcs = ["src/main/distrib/data/defaults.properties"],
+    outs = ["keys.srcjar"],
+    cmd = " && ".join([
+        "TMP=$$(mktemp -d || mktemp -d -t bazel-tmp)",
+        " ".join([
+            "$(location :keyGenerator)",
+            "-properties $(SRCS)",
+            "-classname com.gitblit.Keys",
+            "-tmp $$TMP",
+            "-out $(OUTS)",
+        ]),
+        "rm -rf $$TMP",
+    ]),
+    tools = [":keyGenerator"],
+)

@@ -715,24 +715,13 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="commons-compress-1.4.1.jar">
+      <library name="commons-compress-1.13.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/commons-compress-1.4.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/commons-compress-1.13.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/commons-compress-1.4.1.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="xz-1.0.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/xz-1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/xz-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/commons-compress-1.13.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>

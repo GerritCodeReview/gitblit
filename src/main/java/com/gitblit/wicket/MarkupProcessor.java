@@ -454,7 +454,7 @@ public class MarkupProcessor {
 					 Collections.<String, VerbatimSerializer>singletonMap(VerbatimSerializer.DEFAULT, DefaultVerbatimSerializer.INSTANCE),
 					 Collections.<ToHtmlSerializerPlugin>emptyList());
 		    }
-	    private void printAttribute(String name, String value) {
+	    protected void printAttribute(String name, String value) {
 	        printer.print(' ').print(name).print('=').print('"').print(value).print('"');
 	    }
 

@@ -36,7 +36,7 @@
 	<classpathentry kind="lib" path="ext/lucene-queryparser-5.5.2.jar" sourcepath="ext/src/lucene-queryparser-5.5.2.jar" />
 	<classpathentry kind="lib" path="ext/lucene-sandbox-5.5.2.jar" sourcepath="ext/src/lucene-sandbox-5.5.2.jar" />
 	<classpathentry kind="lib" path="ext/jakarta-regexp-1.4.jar" />
-	<classpathentry kind="lib" path="ext/pegdown-1.5.0.jar" sourcepath="ext/src/pegdown-1.5.0.jar" />
+	<classpathentry kind="lib" path="ext/pegdown-1.6.0.jar" sourcepath="ext/src/pegdown-1.6.0.jar" />
 	<classpathentry kind="lib" path="ext/parboiled-java-1.1.7.jar" sourcepath="ext/src/parboiled-java-1.1.7.jar" />
 	<classpathentry kind="lib" path="ext/parboiled-core-1.1.7.jar" sourcepath="ext/src/parboiled-core-1.1.7.jar" />
 	<classpathentry kind="lib" path="ext/asm-5.0.3.jar" sourcepath="ext/src/asm-5.0.3.jar" />

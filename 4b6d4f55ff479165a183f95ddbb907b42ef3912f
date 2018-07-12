@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5e6b1d97_664e9224",
+        "filename": "src/main/java/com/gitblit/tools/KeysGenerator.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2018-07-12T04:03:25Z",
+      "side": 1,
+      "message": "Note to the reviewers: I borrowed this class from Moxie project that is released under Apache 2 License: [1]. I also applied minor modifications, like remove ant base classe and adding args4j option to call this class as standalone application from withing Bazel build.\n\nI preserved the copyright header as is.\n\n* [1] https://github.com/gitblit/moxie/blob/master/toolkit/src/all/java/org/moxie/ant/MxKeys.java",
+      "revId": "4b6d4f55ff479165a183f95ddbb907b42ef3912f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}

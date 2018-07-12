@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "29bb8087_964ec295",
+        "filename": "BUILD.bazel",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2018-07-12T03:45:55Z",
+      "side": 1,
+      "message": "This is left over from older approach and should be removed.",
+      "parentUuid": "d4b998db_a60eaf8d",
+      "range": {
+        "startLine": 4,
+        "startChar": 4,
+        "endLine": 4,
+        "endChar": 74
+      },
+      "revId": "2f3b89ad965607c07408b43e117848be7ab0666f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "de2d3dc2_d0b95ff2",
         "filename": "BUILD.bazel",
         "patchSetId": 1
